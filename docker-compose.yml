@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  telegram-bot:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN_HERE
+      - TELEGRAM_BOT_USERNAME=YOUR_TELEGRAM_BOT_USERNAME_HERE
+      - APP_URL=YOUR_RENDER_APP_URL_HERE

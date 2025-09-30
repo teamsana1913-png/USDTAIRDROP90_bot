@@ -1,0 +1,14 @@
+{
+    "name": "your-vendor/telegram-bot",
+    "description": "A PHP Telegram bot for Render.com",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "longman/telegram-bot": "^0.82.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\TelegramBot\\": "src/"
+        }
+    }
+}
